@@ -1,6 +1,7 @@
 .topnav {
   overflow: hidden;
   background-color:#f2f2f2;
+  font-family: monospace;
 }
 
 .topnav a {
@@ -15,4 +16,11 @@
 .topnav a:hover {
   background-color:grey;
   color: black;
+}
+
+.topnav input{
+  float:right;
+  text-align:center;
+  padding:5px 10px;
+  height:30px;
 }

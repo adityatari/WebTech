@@ -1,0 +1,379 @@
+/*
+Header and Footer are placed at the begining and at the end respectively.
+Further positioning of other components is according the order in which they appear in the pages!
+Read the class names and id and map them onto the css
+Order has been maintained for easy reference
+*/
+
+/* override default font*/
+@font-face {
+    font-family: 'roboto slabbold';
+    src: url('../fonts/RobotoSlab-Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*global box size*/
+* {
+  box-sizing: border-box;
+}
+
+body{
+	background-image: url("../images/jeans_stack.jpg");
+	background-size: 100% 110%;
+	background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Verdana, Geneva, sans-serif;
+    color: #04080b; 
+    background-color: #ffffff;
+
+}
+/*header common for every page*/
+#pageheader {
+    overflow: hidden;
+	padding: 1em 0;
+	margin-left: 4%;
+	margin-right: 2%; 
+}
+#pageheader h1 {
+    float: left;
+	font-size: 3em;
+	color: #203954;
+	
+}
+
+#pageheader h1 span{
+	color: #4c712b;
+}
+
+#pageheader nav {
+    float: right;
+	padding: 1.25em;
+}
+#pageheader nav li {
+    float: left;
+    margin-right: 1em;
+    font-weight: 700;
+    list-style: none;
+}
+#pageheader nav li:last-child{
+	margin-right: 0;
+}
+#pageheader nav li a{
+	float: left;
+	background-color: #2b4c71;
+	color: #ffffff;
+	display: block;
+	border-radius: 0.375em;
+	padding: 0.25em 1.25em 0.375em 1.25em;
+	text-decoration: none;
+}
+
+/*home page text and image formatting*/
+#introduction {
+    
+	padding: 1em 0px;
+	margin-left: 4%;
+	margin-right: 8%;
+}
+#introduction  #imagewrapper {
+    float: right;
+	width: 50%;
+	text-align: right;
+}
+
+#introduction h2{
+	font-size: 2em;
+	font-family: 'roboto slabbold', Geogia, Serif;
+	color:#91604a;
+}
+
+#introduction p{
+	font-size: 1.5em;
+	font-family: 'roboto slabbold', Geogia, Serif;
+}
+
+#introduction a{
+	text-decoration: none;
+}
+
+/*home page news formatting */
+#latestnews {
+    width: 49%;
+    float: left;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	margin-left: 4%;
+}
+#latestnews h2{
+	font-size:2em;
+	font-family: 'roboto slabbold', Geogia, Serif;
+	color:#91604a;
+	margin-bottom: -20px;
+}
+
+#latestnews article h3{
+	font-size:1.5em;
+	font-family: 'roboto slabbold', Geogia, Serif;
+	color:#91604a;
+	margin-bottom: -12px;
+}
+/*Products page column card formatting*/
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;
+	margin-bottom: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+
+#breadcrumbs {
+    font-size: 0.75em;
+    padding-bottom: 0.5em;
+    font-style: italic;
+    margin-left: 4%;
+}
+/*About Us page Formatting 
+NOTE: Requires more formatting;
+*/
+#columncontainer #content {
+    width: 73.5%;
+    float: right;
+	padding-bottom: 2em;
+}
+
+/*tile on the left side of about us page*/
+#pagesidebar {
+    width: 24.5%;
+    float: left;
+    background-color: #e2e7ec;
+    border-radius: 0.375em;
+    box-shadow: 2px 2px 0 #999999;
+    margin-bottom: 2em;
+    margin-left: 4%;
+}
+
+
+#pagesidebar nav,
+#pagesidebar section {
+    padding: 1em 1em 0 1em;
+}
+
+#pagesidebar h2{
+	font-size: 1.25em;
+}
+
+
+#pagesidebar nav ul li {
+    border-bottom: 1px solid #96a6b9;
+}
+
+#pagesidebar nav ul li:first-child {
+    border-top: 1px solid #96a6b9;
+}
+
+#pagesidebar nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 0.375em 0;
+}
+
+#pagesidebar nav li.currentpage a {
+    font-weight: 700;
+}
+
+/*Contact us page tile 1*/
+#content {
+    padding-bottom: 2em;
+    margin-left: 4%;
+}
+
+#content ul,
+#content p,
+#content dl,
+#pagesidebar p {
+    margin-bottom: 1.25em;
+}
+
+#content dl {
+    width: 30%;
+    padding: 1em;
+    border: 4px solid #cad2db;
+    border-radius: 0.375em;
+}
+
+#content dt {
+    color: #714f2b;
+    font-family: 'roboto slabbold', Georgia, serif;
+    font-size: 1.25em;
+}
+
+#content dd {
+    font-style: italic;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #cad2db;
+}
+
+#content dd:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+#content li {
+    margin-bottom: 0.75em;
+}
+
+#content .highlightlist {
+	list-style-type:none;
+	padding-left:1em;
+}
+
+#content .highlightlist li {
+	padding-left: 20px;
+	background:url(../images/star2.png) 0 0.1em no-repeat;
+}
+
+/* Table styling  For SIZE CHARTS*/
+
+#content table, 
+#content td,
+#content th,
+#content caption {
+    border: 1px solid #96A6B9;
+}
+
+#content td,
+#content th,
+#content caption {
+    padding: 0.25em 0.5em;
+}
+
+#content table {
+    width:50%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#content td {
+    text-align: center;
+}
+
+#content th {
+    background-color: #E2E7EC;
+    color: #2B4C71;
+}
+
+#content caption {
+    border-bottom-width: 0;
+    color: #714f2b;
+    font-family: 'roboto slabbold', Georgia, serif;
+    font-size: 1.25em;
+    text-align: left;
+}
+/*Form formatting from CONTACT US page*/
+textarea, input, select, option {
+    font-family: Arial, Verdana, Geneva, sans-serif;
+    color: #04080b; 
+    font-size: 0.875em;
+}
+
+label {
+    font-weight: bold;
+    width: 40%;
+    float: left;
+}
+
+form {
+    width: 50%;
+}
+
+fieldset {
+    padding: 1em;
+    border: 4px solid #cad2db;
+    border-radius: 0.375em;
+}
+
+.controlgroup {
+    padding-bottom: 1em;
+    clear: left;
+}
+
+textarea, input[type=text], input[type=email] {
+    width: 55%;
+}
+
+textarea {
+    height: 10em;
+}
+
+legend {
+    font-family: 'roboto slabbold', Georgia, serif;
+    font-size: 1.5em;
+    color: #714f2b;
+}
+
+/*Global page footer common across all pages*/
+#pagefooter {
+    clear: both;
+    overflow: hidden;
+	font-size: 0.875em;
+	background-color: #203955;
+	color: #cad2db;
+	border-radius: 0.375em;
+	padding: 1em;
+	margin-bottom: 1em;	
+	margin-left: 4%;
+	margin-right: 2%;
+}
+
+
+#pagefooter a:link, #pagefooter a:visited {
+    color: #cad2DB;
+    text-decoration: none;
+}
+
+#pagefooter p {
+    float: left;
+}
+
+#pagefooter ul {
+    float: right;
+    list-style: none;
+}
+
+#pagefooter li {
+    float: left;
+	padding-right: 1em;
+	margin-right: 1em;
+	border-right: 1px solid #cad2db
+}
+
+#pagefooter li:last-child{
+	padding-right: 0;
+	margin-right: 0;
+	border: none;
+}

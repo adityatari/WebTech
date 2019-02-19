@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <title>Welcome to JeanLand</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    	<header id="pageheader">
+    		<h1>Jean<span>Land</span></h1>
+    		<nav class="topnav" id="primary">
+    			<ul>
+                    <li class="currentpage"><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="contactus.html">Contact us</a></li>
+                </ul>
+            </nav>
+    	</header>
+         <nav id="breadcrumbs" role="navigation">
+                <p><a href="index.html">Home</a> &rarr; <span class="current">Contact us</span></p>
+            </nav>
+            <main role="main">
+                <section id="content">
+                    <h2>Contact JeanLand</h2>
+                    <h3>Call us</h3>
+                    <p>If you have any questions or comments, give us a call on one of the numbers below.</p>
+                    
+                    <dl>
+                            <dt id="c1">Sales:</dt>
+                            <dd aria-labelledby="c1">+91 112 233 4455</dd>
+                            <dt id="c2">Customer services:</dt>
+                            <dd aria-labelledby="c2">+91 686 868 9999</dd>
+                            <dt id="c3">Press office:</dt>
+                            <dd aria-labelledby="c3">+91 123 456 7777</dd>
+                    </dl>
+                    
+                    <h3>Write to us</h3>
+                    <p>Use the form below to send a message to the JeanLand team.</p>
+                    
+                    <form method="post" action="http://titan.dcs.bbk.ac.uk/~ubseaxt/process.php ">
+                        <fieldset>
+                        
+                            <legend>Send us a message</legend>
+                            
+                            
+                            <div class="controlgroup">
+                                <label for="emailaddress">Email address:</label>
+                                <input type="email" name="email" id="emailaddress" placeholder="Your full email address" required aria-required="true"  />
+                            </div>
+                            
+                            <div class="controlgroup">
+                                <label for="fname">Full name:</label>
+                                <input type="text" name="fullname" id="fname" />
+                            </div>
+                            
+                            <div class="controlgroup">
+                                <label for="int">I am interested in:</label>
+                                <select name="interest" id="int">
+                                    <option value="1">Jeans</option>
+                                    <option value="2">Accessories</option>
+                                </select>
+                            </div>
+                            
+                            <div class="controlgroup">
+                                <label for="msg">Message:</label>
+                                <textarea placeholder="Type your message here..." name="message" id="msg" required aria-required="true"></textarea>
+                            </div>
+                            
+                            <input type="submit" name="sendmessage" value="Send" />
+                            
+                        </fieldset>
+                    </form>
+                    
+                </section>
+            </main>
+    	 <footer id="pagefooter" role="contentinfo">
+            <ul>
+                <li><a href="sizecharts.html">Size charts</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="#">Site map</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Accessibility</a></li>
+            </ul>
+            <p>&copy; All Rights Reserved</p>
+        </footer>
+    </body>
+</html>
